@@ -1,0 +1,117 @@
+:root {
+  --verde: #007832;
+  --verde-claro: #e0f4e8;
+  --tinta: #1e2a35;
+  --gris: #5b6773;
+  --fondo: #f5f7f6;
+  font-family: system-ui, 'Segoe UI', sans-serif;
+  color: var(--tinta);
+  background: var(--fondo);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+button { font: inherit; cursor: pointer; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: white;
+  border-bottom: 1px solid #dde5e1;
+}
+
+.logo { font-size: 22px; font-weight: 800; color: var(--verde); }
+
+.links { display: flex; gap: 8px; }
+
+.links button {
+  border: 2px solid var(--verde);
+  background: white;
+  color: var(--verde);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.links button.activo { background: var(--verde); color: white; }
+
+.hero { padding: 40px; }
+.hero h1 { font-size: 36px; margin-bottom: 8px; }
+.hero p { color: var(--gris); }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+.card {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #dde5e1;
+}
+
+.foto {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--verde-claro);
+  color: var(--verde);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.detalle { color: var(--gris); font-size: 14px; }
+
+.card button {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--verde);
+  color: white;
+  font-weight: 700;
+}
+
+.card button:disabled { background: #b8c4be; cursor: default; }
+
+.pagina { padding: 40px; }
+.pagina h2 { margin-bottom: 16px; }
+.vacio { color: var(--gris); }
+
+.lista { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #dde5e1;
+}
+
+.lista button {
+  border: none;
+  background: none;
+  color: #b42318;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 20px 40px;
+  background: var(--tinta);
+  color: #c9d2db;
+  font-size: 14px;
+}
